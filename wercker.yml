@@ -5,7 +5,7 @@ build:
             name: Test msg
             code: echo Hello
         - ramnathnayak/k8s-deploy:
-            server:     $OKE_SERVER
+            server:     $SERVER
             token:      $TOKEN
             deployment: nodehello 
             old-image:  nodehello 
