@@ -3,7 +3,7 @@ build:
     steps:
         - script:
             name: Test msg
-            code: ls -R 
+            code: ls -R /
         - ramnathnayak/k8s-deploy:
             server:     $SERVER
             token:      $TOKEN
