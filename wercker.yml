@@ -5,12 +5,9 @@ build:
             name: Test msg
             code: echo Hello
         - ramnathnayak/k8s-deploy:
-            url:        'https://crwgn3gmyyw.uk-london-1.clusters.oci.oraclecloud.com:6443'
-            server:     OKE_SERVER
-            token:      TOKEN
-            deployment: string 
-            old-image:  string 
-            new-image:  string 
-            type:       string
-
-
+            server:     $OKE_SERVER
+            token:      $TOKEN
+            deployment: nodehello 
+            old-image:  nodehello 
+            new-image:  lhr.ocir.io/intrnayak/nodehello 
+            type:       rolling-update
